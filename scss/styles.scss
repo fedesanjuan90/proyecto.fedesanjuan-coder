@@ -1,0 +1,452 @@
+/* Estilos globales para todas las páginas */
+body {
+    font-family: "Shadows Into Light";
+    font-size: 120%;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d2d1d4;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-container {
+        margin-right: 20px; /* Espacio entre el logo y los enlaces de navegación */
+    }
+
+    .logo {
+        max-height: 120px; /* Ajusta el tamaño máximo del logo según sea necesario */
+    }
+
+    nav {
+        ul {
+            font-family: "Shadows Into Light";
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+
+            li {
+                margin-right: 1em;
+
+                a {
+                    color: rgb(35, 58, 55);
+                    text-decoration: solid;
+                    padding: 0.5em 1em;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #ff9800;
+                    }
+                }
+            }
+        }
+    }
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+footer {
+    font-family: "Shadows Into Light";
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+
+    p {
+        margin: 0;
+    }
+}
+
+/* Estilos específicos para la página de inicio */
+.home-main {
+    padding: 2rem 1rem;
+}
+
+.about, .features {
+    margin: 2rem auto; /* Centra las secciones y añade margen superior e inferior */
+    max-width: 800px; /* Limita el ancho máximo para centrar */
+    text-align: center; /* Centra el texto dentro de las secciones */
+    border: 1.2px solid #333333; /* Añade borde gris */
+    border-radius: 8px; /* Borde redondeado */
+    padding: 1.5rem; /* Espaciado interno */
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0 1rem;
+    }
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature-item {
+    flex-basis: calc(50% - 20px);
+    border: 1px solid #b9b8b8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(47, 11, 131, 0.1);
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #ecebeb;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.feature-item .descripcion {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.feature-item p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    color: #030303;
+}
+
+/* Media query para ajustar estilos en dispositivos móviles */
+@media (max-width: 768px) {
+    .about, .features {
+        margin: 1rem auto; /* Ajusta el margen en dispositivos móviles */
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.875rem;
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+/* Estilos específicos para la página de bebidas */
+.bebidas-main {
+    padding: 2em;
+    text-align: center;
+
+    .bebidas-item {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Centra el contenido dentro de .bebidas-item */
+        display: inline-block; /* Muestra como bloque en línea para ajustar al tamaño del contenido */
+
+        img {
+            max-width: 350px; /* Ancho máximo del 100% del contenedor */
+            height: auto;
+            display: block;
+        }
+
+        .descripcion {
+            padding: 10px;
+            background-color: #f9f9f9;
+
+            h3 {
+                margin-top: 0;
+                font-size: 1.2em;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 0.9em;
+                color: #666;
+            }
+        }
+    }
+}
+
+/* Estilos específicos para la página de market */
+.market-main {
+    padding: 2em;
+    text-align: center;
+
+    .market-item {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Centra el contenido dentro de .market-item */
+        display: inline-block; /* Muestra como bloque en línea para ajustar al tamaño del contenido */
+
+        img {
+            width: 350px; /* Ancho máximo del 100% del contenedor */
+            height: 400px;
+            display: block;
+        }
+
+        .descripcion {
+            padding: 10px;
+            background-color: #f9f9f9;
+
+            h3 {
+                margin-top: 0;
+                font-size: 1.2em;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 0.9em;
+                color: #666;
+            }
+        }
+    }
+}
+
+/* Estilos para el botón de WhatsApp */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+
+    a {
+        display: block;
+        background-color: #25d366; /* Color de fondo del botón */
+        color: #fff; /* Color del texto */
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #128c7e; /* Color de fondo al pasar el ratón */
+        }
+
+        img {
+            width: 24px; /* Tamaño del ícono */
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+    }
+}
+
+.carousel-container {
+    max-width: 500px; /* Ancho máximo del contenedor del carousel */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.img-carousel {
+    width: 30%; /* Ancho máximo de las imágenes dentro del carousel */
+    height: 400px; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+
+        li {
+            display: block;
+            margin: 10px 0;
+
+            .grid-item.first-item {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* Estilos específicos para la página del club */
+.club-main {
+    padding: 2em;
+    text-align: center;
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #555;
+            }
+        }
+    }
+}
+
+/* Estilos adicionales para la página de inicio y otras páginas */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: x-large;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+input[name="slides"] {
+    display: none;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+#slide1:checked ~ .carousel-slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-slides {
+    transform: translateX(-200%);
+}
+
+.carousel-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    label {
+        cursor: pointer;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        background-color: #333;
+        color: #fff;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #555;
+        }
+    }
+}
+
+/* Media query para ajustar estilos en dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel {
+        padding: 0;
+
+        .carousel-slide img {
+            max-width: 80%;
+        }
+
+        .carousel-navigation label {
+            padding: 0.25rem;
+            margin: 0 0.25rem;
+        }
+    }
+
+    .about, .features {
+        margin: 1rem auto;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.875rem;
+            margin: 0 0.5rem;
+        }
+    }
+}
