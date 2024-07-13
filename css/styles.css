@@ -104,7 +104,7 @@ footer p {
 }
 .about p,
 .features p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   margin: 0 1rem;
 }
@@ -152,218 +152,11 @@ footer p {
 
 @media (max-width: 768px) {
   .about,
-  .features {
-    margin: 1rem auto;
-  }
-  .about h2,
-  .features h2 {
-    font-size: 1.5rem;
-  }
-  .about p,
-  .features p {
-    font-size: 1rem;
-    margin: 0 0.5rem;
-  }
-}
-/* Estilos específicos para la página de bebidas */
-.bebidas-main {
-  padding: 2em;
-  text-align: center;
-}
-.bebidas-main .bebidas-item {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: inline-block;
-}
-.bebidas-main .bebidas-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.bebidas-main .bebidas-item .descripcion {
-  padding: 10px;
-  background-color: #f9f9f9;
-}
-.bebidas-main .bebidas-item .descripcion h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-.bebidas-main .bebidas-item .descripcion p {
-  margin-bottom: 0;
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* Estilos específicos para la página de market */
-.market-main {
-  padding: 2em;
-  text-align: center;
-}
-.market-main .market-item {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: inline-block;
-}
-.market-main .market-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.market-main .market-item .descripcion {
-  padding: 10px;
-  background-color: #f9f9f9;
-}
-.market-main .market-item .descripcion h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-.market-main .market-item .descripcion p {
-  margin-bottom: 0;
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* Estilos específicos para la página del club */
-.club-main {
-  padding: 2em;
-  text-align: center;
-}
-.club-main form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.club-main form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.club-main form input[type=text],
-.club-main form input[type=email],
-.club-main form input[type=tel],
-.club-main form textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-.club-main form textarea {
-  height: 120px;
-}
-.club-main form button {
-  background-color: #ff9800;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-.club-main form button:hover {
-  background-color: #555;
-}
-
-/* Estilos para el botón de WhatsApp */
-#whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-#whatsapp-button a {
-  display: block;
-  background-color: #25d366;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-#whatsapp-button a:hover {
-  background-color: #128c7e;
-}
-#whatsapp-button a img {
-  width: 24px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-#whatsapp-button a span {
-  vertical-align: middle;
-}
-
-/* Estilos para el carousel */
-.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 1rem 0;
-}
-.carousel input[name=slides] {
-  display: none;
-}
-.carousel .carousel-slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel .carousel-slides .carousel-slide {
-  min-width: 100%;
-  flex: 1 0 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carousel .carousel-slides .carousel-slide img {
-  max-width: 100%;
-  height: auto;
-}
-.carousel .carousel-navigation {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-  z-index: 10;
-}
-.carousel .carousel-navigation .arrow {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.carousel .carousel-navigation .arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media (max-width: 768px) {
-  .about,
   .features,
   .bebidas-main,
   .market-main,
   .club-main {
     padding: 1em;
-  }
-  .carousel {
-    max-width: 100%;
   }
 }
 /* Estilos específicos para la página de bebidas */
@@ -430,6 +223,52 @@ footer p {
   margin-bottom: 0;
   font-size: 0.9em;
   color: #666;
+}
+
+/* Estilos específicos para la página del club */
+.club-main {
+  padding: 2em;
+  text-align: center;
+}
+.club-main form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.club-main form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.club-main form input[type=text],
+.club-main form input[type=email],
+.club-main form input[type=tel],
+.club-main form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.club-main form textarea {
+  height: 120px;
+}
+.club-main form button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.club-main form button:hover {
+  background-color: #555;
 }
 
 /* Estilos para el botón de WhatsApp */
